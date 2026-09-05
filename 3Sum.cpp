@@ -62,6 +62,7 @@ int main(){
         }
         zeroCount++;
     }
+    
 
     for(int i=0;i<res.size();i++){
         for(int j=0;j<res[0].size();j++){
