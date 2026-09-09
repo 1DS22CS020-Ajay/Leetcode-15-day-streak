@@ -13,7 +13,16 @@ int countDigits(int n){
 int main(){
     int n;
     cin>>n;
-    int d = countDigits(n);
-    cout<<d<<endl;
+
+    int num_commas = 0;
+    int num = countDigits(n);
+    while(num!=3){ 
+        num_commas += (num-1)/3;
+        if(n<0) break;
+        n--;
+        num = countDigits(n);
+    }
+
+    cout<<num_commas<<endl;
     return 0;
 }
